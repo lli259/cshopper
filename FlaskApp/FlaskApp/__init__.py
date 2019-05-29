@@ -38,7 +38,7 @@ class Config(object):
         'sqlite:///' + os.path.join(basedir, 'app.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     POSTS_PER_PAGE = 16
-    UPLOAD_FOLDER = os.path.join(basedir, 'app/static/')
+    UPLOAD_FOLDER = os.path.join(basedir, 'app/static')
     ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg','bmp'])
 
     #register email service from google
