@@ -11,7 +11,7 @@ logging.basicConfig(stream=sys.stderr)
 #sys.path.insert(0, "/usr/bin/")        
 sys.path.insert(0,"/var/www/FlaskApp/")
 
-print("Hello There")
-print(sys.path)
+#print("Hello There")
+#print(sys.path)
 
 from FlaskApp import app as application
