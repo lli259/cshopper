@@ -98,8 +98,8 @@ mail = Mail(app)
 
 if not app.debug:
 
-    print("Oh HI")
-    print(basedir) 
+    #print("Oh HI")
+    #print(basedir) 
 
     if not os.path.exists(basedir + '/logs'):
         os.mkdir(basedir + '/logs')
