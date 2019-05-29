@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+  <div>
+        <table class="table">
+          <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Price Each</th>
+                <th scope="col">Counts</th>
+                <th scope="col">Available</th>
+                <th scope="col">Note</th>
+              </tr>
+          </thead>
+
+          <tbody>
+
+          {% if product %}
+              {% for any in product %}
+              <tr>
+
+                <td  width=20%>
+                  <a href="{{ url_for('product', productName=any[0]) }}">{{ any[0] }}</a>
+                </td>
+                <td width=20%>
+                  <a style="font-size:150%; color:Black;">${{ any[1] }}</a>
+                </td>
+                <td width=20%>
+                  <a href="{{ url_for('minusone', productName=any[0]) }}"><img  width=10% src="{{url_for('static', filename='minus.png')}}"/></a>
+                  <a style="font-size:150%; color:Black;">{{ any[2] }}</a>
+                  <a href="{{ url_for('plusone', productName=any[0]) }}"><img  width=10% src="{{url_for('static', filename='plus.png')}}"/> </a>
+
+                </td>
+                <td width=20%>
+
+                  <a style="font-size:150%; color:Black;">{{ any[3] }}</a>
+                </td >
+                <td width=20%>
+                  <a style="font-size:150%; color:red;">{{ any[4] }}</a>
+                </td>
+              </tr>
+
+              {% endfor %}
+        {% endif %}
+
+        <tr>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+        </tr>
+
+        <tr>
+          <td> <a style="font-size:150%; color:Black;">Sum</a>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td> <a style="font-size:150%; color:Black;">${{sumprice}}</a>
+          </td>
+        </tr>
+
+        <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+          </tr>
+
+        <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td> <a href="{{ url_for('submittransac', sum=sumprice) }}"> <button type="button" >Checkout</button> </a>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+
+   </div>
+
+{% endblock %}

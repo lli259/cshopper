@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+
+
+
+  <div>
+        <table class="table">
+          <thead>
+              <tr>
+                <th scope="col">transnum</th>
+                <th scope="col">money</th>
+                <th scope="col">shipname</th>
+                <th scope="col">shipaddress</th>
+                <th scope="col">creditcard</th>
+                <th scope="col">creditid</th>
+                <th scope="col">creditexpmonth</th>
+                <th scope="col">creditexpyear</th>
+                <th scope="col">paymentstatus</th>
+                <th scope="col">shipmentstatus</th>
+              </tr>
+          </thead>
+
+          <tbody>
+
+          {% if trans %}
+              {% for any in trans %}
+              <tr>
+
+                <td >
+                  <a href="{{ url_for('transdetail', transnum= any.transnum) }}">{{ any.transnum}}</a>
+                </td>
+                <td >
+                  <a>{{ any.money}}</a>
+                </td>
+                <td >
+                  <a>{{ any.shipname}}</a>
+                </td>
+                <td >
+                  <a>{{ any.addr}}</a>
+                </td>
+                <td >
+                  <a>{{ any.creditcard}}</a>
+                </td>
+                <td >
+                  <a>{{ any.creditid}}</a>
+                </td>
+                <td >
+                  <a>{{ any.creditexpmonth}}</a>
+                </td>
+                <td >
+                  <a>{{ any.creditexpyear}}</a>
+                </td>
+                <td >
+                  <a>{{any.paymentstatus}}</a>
+                </td>
+                <td >
+                  <a>{{ any.shipmentstatus}}</a>
+                </td>
+              </tr>
+
+              {% endfor %}
+        {% endif %}
+
+        </tbody>
+        </table>
+
+   </div>
+
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+  <div>
+        Transaction Number:{{transnum}}
+        <table class="table">
+          <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Counts</th>
+              </tr>
+          </thead>
+
+          <tbody>
+
+          {% if product %}
+              {% for any in product %}
+              <tr>
+
+                <td  width=20%>
+                  <a href="{{ url_for('product', productName=any[0]) }}">{{ any[0] }}</a>
+                </td>
+                <td width=20%>
+                  <a style="font-size:150%; color:Black;">{{ any[1] }}</a>
+                </td>
+              </tr>
+
+              {% endfor %}
+        {% endif %}
+
+        </tbody>
+        </table>
+
+   </div>
+
+   {%if current_user.username=="shaochaoqun"%}
+   <p> Payment Status</p>
+   <form action = "{{ url_for('paymentchoice',transnum=transnum) }}" method = "post">
+   <select  name="paymentselect">
+     {% if paymentstatus=="confirmed" %}
+     <option selected="selected">confirmed</option>
+     <option>payed</option>
+     <option>refund</option>
+     <option>cancelled</option>
+     {% endif %}
+     {% if paymentstatus=="payed" %}
+     <option selected="selected">payed</option>
+     <option>confirmed</option>
+     <option>refund</option>
+     <option>cancelled</option>
+     {% endif %}
+     {% if paymentstatus=="refund" %}
+     <option selected="selected">refund</option>
+     {% endif %}
+     {% if paymentstatus=="cancelled" %}
+     <option selected="selected">cancelled</option>
+     {% endif %}
+   </select>
+   <p><input type = "submit" value = "submit" /></p>
+
+   <p> Shipment Status</p>
+    </form>
+    <form action = "{{ url_for('shipmentinfor',transnum=transnum) }}" method = "post">
+    <p><input type = "text" name = "shipmentnumber" />{{shipmentstatus}}</p>
+    <p><input type = "submit" value = "submit" /></p>
+     </form>
+
+
+
+
+   {% endif %}
+
+{% endblock %}

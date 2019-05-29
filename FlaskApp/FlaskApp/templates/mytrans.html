@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+  <div>
+        <table class="table">
+          <thead>
+              <tr>
+                <th scope="col">transaction num</th>
+                <th scope="col">money</th>
+                <th scope="col">name</th>
+                <th scope="col">shipping address</th>
+                <th scope="col">payment card</th>
+                <th scope="col">payment status</th>
+                <th scope="col">shipment status</th>
+              </tr>
+          </thead>
+
+          <tbody>
+
+          {% if trans %}
+              {% for any in trans %}
+              <tr>
+
+                <td >
+                  <a href="{{ url_for('transdetail', transnum= any.transnum) }}">{{ any.transnum}}</a>
+                </td>
+                <td >
+                  <a>{{ any.money}}</a>
+                </td>
+                <td >
+                  <a>{{ any.shipname}}</a>
+                </td>
+                <td >
+                  <a>{{ any.addr}}</a>
+                </td>
+                <td >
+                  <a>{{ any.creditcard}}</a>
+                </td>
+                <td >
+                  <a>{{ any.paymentstatus}}</a>
+                </td>
+                <td >
+                  <a>{{ any.shipmentstatus}}</a>
+                </td>
+              </tr>
+
+              {% endfor %}
+        {% endif %}
+
+        </tbody>
+        </table>
+
+   </div>
+
+{% endblock %}

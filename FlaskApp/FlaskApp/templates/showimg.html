@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+  <div>
+
+        <table style="width:100%">
+
+          {% if items %}
+              {% for group in items %}
+            <tr>
+                {% for any in group %}
+                <td width="20%">
+
+                <a href="{{ url_for('product', productName=any.name) }}">
+                  {% if any.imgname %}
+                    <img width="90%" src="{{url_for('static', filename=any.imgname)}}"/> </a>
+                  {% else %}
+                    <img width="90%" src="{{url_for('static', filename='1.jpeg')}}"/> </a>
+                  {% endif %}
+
+                </td>
+                {% endfor %}
+              </tr>
+              <tr>
+                {% for any in group %}
+                <td>
+
+                  <a href="{{ url_for('product', productName=any.name) }}" style="font-size:150%; color:Black;">{{ any.name }}</a>
+                </td>
+                {% endfor %}
+            </tr>
+              <tr>
+                {% for any in group %}
+                <td>
+
+                  $<a href="{{ url_for('product', productName=any.name) }}" style="font-size:150%; color:Black;">{{ any.price }}</a>
+                </td>
+                {% endfor %}
+            </tr>
+
+            <tr>
+              {% for any in group %}
+              <td>
+               <br>
+              </td>
+              {% endfor %}
+          </tr>
+
+              {% endfor %}
+        {% endif %}
+
+        </table>
+   </div>
+   <nav aria-label="...">
+       <ul class="pager">
+           <li class="previous{% if not prev_url %} disabled{% endif %}">
+               <a href="{{ prev_url or '#' }}">
+                   <span aria-hidden="true">&larr;</span> Last page
+               </a>
+           </li>
+           <li class="next{% if not next_url %} disabled{% endif %}">
+               <a href="{{ next_url or '#' }}">
+                   Next page <span aria-hidden="true">&rarr;</span>
+               </a>
+           </li>
+       </ul>
+   </nav>
+{% endblock %}

@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <table class="table table-hover">
+
+      <tr>
+          <h1>{{ product.name }}</h1>
+      </tr>
+
+        <tr>
+            <td width=50%>
+
+              {% if product.imgname %}
+                <img  width="90%" src="{{url_for('static', filename=product.imgname)}}"/>
+              {% else %}
+                <img  width="90%" src="{{url_for('static', filename='1.jpeg')}}"/>
+              {% endif %}
+
+             </td>
+            <td width=50%>
+              <p>  $<a style="font-size:150%; color:Black;">{{ product.price }}</a> </p>
+
+
+
+
+              {%if current_user.username=="shaochaoqun"%}
+              <p> Change it</p>
+               </form>
+               <form action = "{{ url_for('changemoney',productid=product.id) }}" method = "post">
+               <p>$<input type = "text" name = "changemoney" /></p>
+               <p><input type = "submit" value = "submit" /></p>
+                </form>
+
+              {% endif %}
+
+
+
+              <p> <br></p>
+              <p>  Available: {{ product.count }} items </p>
+
+
+              {%if current_user.username=="shaochaoqun"%}
+              <p> Change it</p>
+               </form>
+               <form action = "{{ url_for('changecount',productid=product.id) }}" method = "post">
+               <p><input type = "text" name = "changecount" />Items</p>
+               <p><input type = "submit" value = "submit" /></p>
+                </form>
+
+              {% else %}
+              <p> <br></p>
+
+              <p > <a href="{{ url_for('tocart', prdname=product.name) }}"> <button type="button" >Add to cart!</button> </a> </p>
+              {% endif %}
+
+
+
+
+
+
+            </td>
+        </tr>
+
+    </table>
+
+    <table class="table table-hover">
+
+    <tr>
+      <td>
+        {% for i in product.describe.split("\r\n") %}
+        <p>{{i}}</p>
+        {% endfor %}
+      </td>
+    </tr>
+
+    </table>
+
+
+    {%if current_user.username=="shaochaoqun"%}
+    <p> <a style="font-size:300%; color:Red;"> Go back? Click the top left arrow! <-- </a></p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p> <a style="font-size:300%; color:Red;"> Click the button below to delete it! This will not recover!</a></p>
+    <p> <a style="font-size:300%; color:Red;"> Sales related to this products will also be deleted!</a></p>
+     </form>
+     <form action = "{{ url_for('deleteprod',productid=product.id) }}" method = "post">
+     <p><input type = "submit" value = "Delete" /></p>
+      </form>
+    {% endif %}
+
+{% endblock %}
