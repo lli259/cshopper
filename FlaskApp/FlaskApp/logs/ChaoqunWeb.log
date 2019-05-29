@@ -41,3 +41,8 @@
 2019-05-26 01:32:55,463 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
 2019-05-26 01:33:24,501 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
 2019-05-26 23:48:57,247 INFO: ChaoqunWeb [in __init__.py:111]
+2019-05-29 04:01:57,812 INFO: ChaoqunWeb [in __init__.py:111]
+2019-05-29 05:00:32,462 INFO: ChaoqunWeb [in __init__.py:111]
+2019-05-29 05:01:22,190 INFO: ChaoqunWeb [in __init__.py:111]
+2019-05-29 07:12:19,561 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:114]
+2019-05-29 07:14:05,893 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:114]

@@ -98,9 +98,12 @@ mail = Mail(app)
 
 if not app.debug:
 
-    if not os.path.exists('logs'):
-        os.mkdir('logs')
-    file_handler = RotatingFileHandler('logs/ChaoqunWeb.log', maxBytes=10240,
+    print("Oh HI")
+    print(basedir) 
+
+    if not os.path.exists(basedir + '/logs'):
+        os.mkdir(basedir + '/logs')
+    file_handler = RotatingFileHandler(basedir + '/logs/ChaoqunWeb.log', maxBytes=10240,
                                        backupCount=10)
     file_handler.setFormatter(logging.Formatter(
         '%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]'))
@@ -786,4 +789,5 @@ def upload():
 
 #export FLASK_APP=application.py
 #app.run(host="0.0.0.0",port=80)
-app.run()
+if __name__ == '__main__':
+    app.run()
