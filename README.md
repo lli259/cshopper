@@ -3,12 +3,14 @@
 
 #apache2 server deploying on python3
 
-#python flask install
+#python flask install 
 sudo su #use root to install package, or apache2 can't find the installed packages.
 #if sudo su, the followings can run without sudo.
 sudo apt-get update
+sudo apt install python3-pip
 sudo apt-get -y install python3 python3-flask
 
+pip3 install -r requirements.txt
 python3 __init__.py   #to test if the program work locally
 
 #apach service
