@@ -48,9 +48,9 @@ class Config(object):
     MAIL_SERVER='smtp.gmail.com'
     MAIL_PORT=465
     MAIL_USE_SSL=True
-    MAIL_USERNAME = 'info@cshopperstore.com'
-    MAIL_PASSWORD = 'OBGs#1234'
-    ADMINS = ['info@cshopperstore.com']
+    MAIL_USERNAME = 'autoreply@cshopperstore.com'
+    MAIL_PASSWORD = 'autoreply'
+    ADMINS = ['autoreply@cshopperstore.com']
 
 
 
@@ -74,7 +74,7 @@ def send_email(subject, sender, recipients, text_body, html_body):
 def send_password_reset_email(user):
     #print("test3")
     token = user.get_reset_password_token()
-    send_email('[ChaoqunWeb] Reset Your Password',
+    send_email('[cshopperstore] Reset Your Password',
                sender=app.config['ADMINS'][0],
                recipients=[user.email],
                text_body=render_template('email/reset_password.txt',
@@ -101,7 +101,7 @@ if not app.debug:
 
     if not os.path.exists(basedir + '/logs'):
         os.mkdir(basedir + '/logs')
-    file_handler = RotatingFileHandler(basedir + '/logs/ChaoqunWeb.log', maxBytes=10240,
+    file_handler = RotatingFileHandler(basedir + '/logs/cshopperstore.log', maxBytes=10240,
                                        backupCount=10)
     file_handler.setFormatter(logging.Formatter(
         '%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]'))
@@ -109,7 +109,7 @@ if not app.debug:
     app.logger.addHandler(file_handler)
 
     app.logger.setLevel(logging.INFO)
-    app.logger.info('ChaoqunWeb')
+    app.logger.info('cshopperstore')
 
 
 
