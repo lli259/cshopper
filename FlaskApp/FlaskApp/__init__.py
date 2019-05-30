@@ -98,8 +98,6 @@ mail = Mail(app)
 
 if not app.debug:
 
-    #print("Oh HI")
-    #print(basedir) 
 
     if not os.path.exists(basedir + '/logs'):
         os.mkdir(basedir + '/logs')
@@ -780,8 +778,14 @@ def upload():
         return render_template('uploadprod.html', form=form)
 
 
-
-
+@app.route('/policy/<pname>')
+def policy(pname):
+    if pname=='privacy':
+        return render_template('privacy.html')
+    if pname=='shipment':
+        return render_template('shipment.html')
+    if pname=='return':
+        return render_template("return.html")
 
 
 
