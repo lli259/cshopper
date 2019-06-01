@@ -155,9 +155,10 @@ class SubmitTransForm(FlaskForm):
     name = TextAreaField('Name', validators=[DataRequired()],render_kw={"rows": 1, "cols": 100})
     addr = TextAreaField('Address', validators=[DataRequired()],render_kw={"rows": 1, "cols": 100})
     card=TextAreaField('Card Number', validators=[DataRequired()],render_kw={"rows": 1, "cols": 30})
-    expmonth=TextAreaField('Expiration Month(01)', validators=[DataRequired()],render_kw={"rows":1, "cols": 2})
-    expyear=TextAreaField('Expiration Year(2020)', validators=[DataRequired()],render_kw={"rows":1, "cols": 4})
-    vcode=TextAreaField('Last 3 or 4 digits in the back', validators=[DataRequired()],render_kw={"rows":1, "cols": 4})
+    cardname=TextAreaField('Card Name', validators=[DataRequired()],render_kw={"rows": 1, "cols": 30})
+    expmonth=TextAreaField('Expiration Month(MM)', validators=[DataRequired()],render_kw={"rows":1, "cols": 2})
+    expyear=TextAreaField('Expiration Year(YYYY)', validators=[DataRequired()],render_kw={"rows":1, "cols": 4})
+    vcode=TextAreaField('CVV 3 or 4 digits', validators=[DataRequired()],render_kw={"rows":1, "cols": 4})
     submit = SubmitField('Submit')
 
 
@@ -250,6 +251,7 @@ class Transsummary(db.Model):
     shipname=db.Column(db.String(30))
     addr=db.Column(db.String(200))
     creditcard=db.Column(db.String(30)) #card number
+    creditname=db.Column(db.String(30)) #card name
     creditid=db.Column(db.String(4))  #3240 last 4 or 3
     creditexpmonth=db.Column(db.String(2)) #02
     creditexpyear=db.Column(db.String(4)) #2022
@@ -503,7 +505,9 @@ def submittransac(sum):
         #add to trans summary
         trans = Transsummary(user_id=current_user.id,money=money,transnum=transacnumber,time=date,
         shipname=form.name.data,addr=form.addr.data,
-        creditcard=form.card.data,creditid=form.vcode.data,creditexpmonth=form.expmonth.data,creditexpyear=form.expyear.data,
+        creditcard=form.card.data,
+        creditname=form.cardname.data,
+        creditid=form.vcode.data,creditexpmonth=form.expmonth.data,creditexpyear=form.expyear.data,
         paymentstatus="confirmed",shipmentstatus="not shipped")
         db.session.add(trans)
 
