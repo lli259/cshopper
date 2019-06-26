@@ -38,5 +38,8 @@ run certbot
 if success, it will write something to port 80 and 443.
 the rewritten is in enable folder.
 .
-
-
+#some refers
+https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
+http://terokarvinen.com/2016/deploy-flask-python3-on-apache2-ubuntu
+https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-18-04
+https://blog.csdn.net/qq_33421902/article/details/80237266
