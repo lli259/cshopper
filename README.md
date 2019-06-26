@@ -27,3 +27,12 @@ sudo a2dissite 000-default.conf
 sudo a2ensite FlaskApp.conf
 sudo service apache2 restart
 
+
+#-----------------------------
+deploy https
+change FlaskApp.conf to the new cshopperstore.conf
+open both http https ssh in security group
+add port 80 400 desciption in one cshopperstore.conf
+run certbot
+if success, it will write something to port 80 and 400.
+
