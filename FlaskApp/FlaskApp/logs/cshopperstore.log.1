@@ -1,112 +1,111 @@
-2019-07-22 00:15:23,662 ERROR: Exception on / [GET] [in /home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/liuliu/Downloads/FlaskApp_after_sju/FlaskApp/__init__.py", line 414, in index
-    prev_url=prev_url)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/templating.py", line 135, in render_template
-    context, ctx.app)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/templating.py", line 117, in _render
-    rv = template.render(context)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
-    return original_render(self, *args, **kwargs)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
-    return self.environment.handle_exception(exc_info, True)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
-    raise value.with_traceback(tb)
-  File "/home/liuliu/Downloads/FlaskApp_after_sju/FlaskApp/templates/showimg.html", line 2, in top-level template code
-    {% import 'bootstrap/wtf.html' as wtf %}
-  File "/home/liuliu/Downloads/FlaskApp_after_sju/FlaskApp/templates/base.html", line 1, in top-level template code
-    {% extends 'bootstrap/base.html' %}
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
-    {% block doc -%}
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
-    {%- block html %}
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
-    {% block body -%}
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
-    {% block content -%}
-  File "/home/liuliu/Downloads/FlaskApp_after_sju/FlaskApp/templates/base.html", line 57, in block "content"
-    {% block app_content %}{% endblock %}
-  File "/home/liuliu/Downloads/FlaskApp_after_sju/FlaskApp/templates/showimg.html", line 47, in block "app_content"
-    <a href="{{ url_for('showascategory', categoryname=catgry) }}">{{catgry}}</a>
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/helpers.py", line 356, in url_for
-    return appctx.app.handle_url_build_error(error, endpoint, values)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/app.py", line 2061, in handle_url_build_error
-    reraise(exc_type, exc_value, tb)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/helpers.py", line 345, in url_for
-    force_external=external)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/werkzeug/routing.py", line 1776, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.BuildError: Could not build url for endpoint 'showascategory'. Did you forget to specify values ['categoryname']?
-2019-07-22 00:17:05,881 INFO: cshopperstore [in /home/liuliu/Downloads/FlaskApp_after_sju/FlaskApp/__init__.py:112]
-2019-07-22 00:17:14,835 ERROR: Exception on / [GET] [in /home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/liuliu/Downloads/FlaskApp_after_sju/FlaskApp/__init__.py", line 414, in index
-    prev_url=prev_url)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/templating.py", line 135, in render_template
-    context, ctx.app)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/templating.py", line 117, in _render
-    rv = template.render(context)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
-    return original_render(self, *args, **kwargs)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
-    return self.environment.handle_exception(exc_info, True)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
-    raise value.with_traceback(tb)
-  File "/home/liuliu/Downloads/FlaskApp_after_sju/FlaskApp/templates/showimg.html", line 2, in top-level template code
-    {% import 'bootstrap/wtf.html' as wtf %}
-  File "/home/liuliu/Downloads/FlaskApp_after_sju/FlaskApp/templates/base.html", line 1, in top-level template code
-    {% extends 'bootstrap/base.html' %}
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
-    {% block doc -%}
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
-    {%- block html %}
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
-    {% block body -%}
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
-    {% block content -%}
-  File "/home/liuliu/Downloads/FlaskApp_after_sju/FlaskApp/templates/base.html", line 57, in block "content"
-    {% block app_content %}{% endblock %}
-  File "/home/liuliu/Downloads/FlaskApp_after_sju/FlaskApp/templates/showimg.html", line 47, in block "app_content"
-    <a href="{{ url_for('showascategory', categoryname=categoryname) }}">{{categoryname}}</a>
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/helpers.py", line 356, in url_for
-    return appctx.app.handle_url_build_error(error, endpoint, values)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/app.py", line 2061, in handle_url_build_error
-    reraise(exc_type, exc_value, tb)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/flask/helpers.py", line 345, in url_for
-    force_external=external)
-  File "/home/liuliu/Documents/chaoqun_shopping_web/env/lib/python3.7/site-packages/werkzeug/routing.py", line 1776, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.BuildError: Could not build url for endpoint 'showascategory'. Did you forget to specify values ['categoryname']?
-2019-07-22 00:18:31,402 INFO: cshopperstore [in /home/liuliu/Downloads/FlaskApp_after_sju/FlaskApp/__init__.py:112]
+2019-05-30 16:00:36,312 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 16:00:59,847 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 19:34:25,883 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 19:35:05,455 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 19:38:21,781 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-31 07:42:26,977 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-31 08:14:24,774 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-01 06:31:00,095 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-01 07:35:36,201 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-01 19:16:15,442 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-01 19:16:43,588 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-01 19:24:20,110 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:113]
+2019-06-01 19:26:14,204 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:113]
+2019-06-01 19:30:41,064 INFO: cshopperstore [in __init__.py:113]
+2019-06-01 19:31:02,774 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:113]
+2019-06-01 19:33:00,551 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:113]
+2019-06-01 20:27:25,371 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-01 20:28:00,044 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-01 20:30:38,178 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-01 20:30:51,239 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-01 20:32:24,712 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-01 20:32:45,107 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-01 21:04:23,428 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-02 06:38:49,965 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-02 07:32:32,129 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-03 08:38:33,156 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-03 11:07:29,580 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-04 06:39:45,306 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-04 07:56:09,181 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-05 05:04:09,257 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-05 05:04:12,484 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-05 07:48:12,733 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-05 08:10:04,609 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-06 06:44:28,009 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-06 07:05:55,063 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-07 07:29:38,139 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-07 07:54:35,277 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-07 19:51:21,219 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-08 07:09:35,607 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-08 07:10:19,084 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-09 07:52:42,800 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-09 08:12:22,891 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-10 06:29:23,186 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-10 06:43:37,254 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-11 06:25:12,104 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-11 06:43:17,683 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-12 07:42:40,130 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-12 08:20:30,233 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-13 06:26:53,143 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-13 08:13:35,043 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-14 07:40:51,042 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-14 08:55:32,526 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-15 06:48:06,043 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-15 06:50:54,958 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-16 07:25:35,095 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-16 07:45:27,719 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-17 03:22:08,122 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-17 06:37:00,778 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-17 06:50:09,699 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-18 06:39:30,844 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-18 08:30:40,383 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-19 06:47:28,595 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-19 08:12:28,109 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-20 06:29:20,702 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-20 06:29:35,141 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-21 07:40:27,068 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-21 07:40:27,819 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-22 07:13:12,610 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-22 10:40:16,325 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-23 07:09:17,781 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-23 07:09:18,780 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-24 06:52:37,050 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-24 06:52:42,019 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-25 07:00:34,346 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-25 12:55:40,108 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-26 06:34:47,802 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-26 06:37:41,996 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-27 08:33:23,506 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-27 08:33:27,485 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-28 06:55:09,315 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-28 07:41:29,699 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-28 19:55:20,647 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-29 09:05:53,718 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-29 09:23:35,908 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-30 06:52:30,724 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-06-30 11:46:08,308 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-01 06:52:33,255 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-01 07:22:47,163 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-02 06:25:33,298 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-02 06:35:31,202 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-03 07:02:12,172 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-03 07:45:00,174 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-04 07:00:33,230 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-04 08:26:47,755 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-05 06:34:18,920 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-05 06:40:44,742 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-06 06:53:51,963 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-06 07:08:07,876 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-07 09:01:03,999 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-07 09:18:30,156 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-08 07:07:52,494 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-08 07:46:32,119 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-09 06:26:28,638 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-09 06:32:33,427 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-10 08:12:51,708 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-10 09:13:03,602 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-11 06:55:44,843 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-11 07:35:00,969 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-12 06:30:58,528 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-12 06:35:41,132 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-07-13 07:46:48,769 INFO: cshopperstore [in /var/www/FlaskApp/FlaskApp/__init__.py:112]

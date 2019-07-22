@@ -46,15 +46,15 @@ body {
 <div class="sidenav">
   <a href="{{ url_for('index') }}">all</a>
   {% for categoryname in categories %}
-    {% if categoryname!=None%}
   <a href="{{ url_for('showascategory', categoryname=categoryname) }}">{{categoryname}}</a>
-    {% endif %}
   {% endfor %}
 </div>
 
 <div class="main">
   <div>
+
     <h6 >Category > {{selectedcat}} </h6>
+
   <div>
   <div>
 
@@ -109,14 +109,14 @@ body {
    <nav aria-label="...">
        <ul class="pager">
            <li class="previous{% if not prev_url %} disabled{% endif %}">
-               <a href="{{ prev_url or '#' }}">
-                   <span aria-hidden="true">&larr;</span> Last page
-               </a>
+		    <a href="{{ prev_url or '#' }}">
+			    <span aria-hidden="true">&larr;</span> <h6>Last page</h6>
+	       </a>
            </li>
            <li class="next{% if not next_url %} disabled{% endif %}">
-               <a href="{{ next_url or '#' }}">
-                   Next page <span aria-hidden="true">&rarr;</span>
-               </a>
+		   <a href="{{ next_url or '#' }}">
+			   <h6>Next page</h6><span aria-hidden="true">&rarr;</span>
+			   </a>
            </li>
        </ul>
    </nav>
@@ -124,3 +124,4 @@ body {
 
 </body>
 {% endblock %}
+

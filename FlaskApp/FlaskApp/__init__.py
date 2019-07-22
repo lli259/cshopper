@@ -408,7 +408,7 @@ def index():
 
     allcat=Products.query.all()
     categories=[i.category for i in allcat]
-    categories=set(categories)
+    categories=sorted(list(set(categories)))
 
     return render_template('showimg.html', items=groups,categories=categories,selectedcat='all',next_url=next_url,
     prev_url=prev_url)
@@ -418,7 +418,6 @@ def showascategory(categoryname):
 
     #allproc=Products.query.all()
     #allproc[prd]='1.jpeg'
-
     page = request.args.get('page', 1, type=int)
     posts = Products.query.filter_by(category=categoryname).order_by(Products.name.asc()).paginate(
         page, app.config['POSTS_PER_PAGE'], False)
@@ -444,7 +443,8 @@ def showascategory(categoryname):
 
     allcat=Products.query.all()
     categories=[i.category for i in allcat]
-    categories=set(categories)
+    categories=sorted(list(set(categories)))
+    #categories=set(categories)
 
     return render_template('showimg.html', items=groups,categories=categories,selectedcat=categoryname,next_url=next_url,
     prev_url=prev_url)
@@ -592,8 +592,8 @@ def product(productName):
 
     all=Products.query.all()
     categories=[i.category for i in all]
-    categories=set(categories)
-
+    #categories=set(categories)
+    categories=sorted(list(set(categories)))
 
     return render_template('productinfo.html', product=prod,categories=categories)
 
@@ -652,8 +652,8 @@ def tocart(prdname):
 
     all=Products.query.all()
     categories=[i.category for i in all]
-    categories=set(categories)
-
+    #categories=set(categories)
+    categories=sorted(list(set(categories)))
     return render_template('productinfo.html', product=prod,categories=categories)
 
 
@@ -850,7 +850,7 @@ def upload():
             #print(filename)
             describe=form.describe.data
             #describe=describe.replace("\r\n", "<br>")
-            newp = Products(name=name, price=form.price.data, count=form.count.data,describe=describe,imgname=savedImgName)
+            newp = Products(name=name, price=form.price.data, count=form.count.data,describe=describe,category='other',imgname=savedImgName)
 
             db.session.add(newp)
             db.session.commit()
@@ -877,3 +877,4 @@ def policy(pname):
 #app.run(host="0.0.0.0",port=80)
 if __name__ == '__main__':
     app.run()
+
