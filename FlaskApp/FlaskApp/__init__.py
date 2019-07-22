@@ -200,6 +200,7 @@ class Products(db.Model):
     describe = db.Column(db.String(2000))
     imgname=db.Column(db.String(60))
     count= db.Column(db.Integer)
+    category=db.Column(db.String(50))
     def __repr__(self):
         return '<Name {}>'.format(self.name)
 
@@ -545,7 +546,14 @@ def submittransac(sum):
 @app.route('/product/<productName>')
 def product(productName):
     prod = Products.query.filter_by(name=productName).first_or_404()
-    return render_template('productinfo.html', product=prod)
+
+
+    all=Products.query.all()
+    categories=[i.category for i in all]
+    categories=set(categories)
+
+
+    return render_template('productinfo.html', product=prod,categories=categories)
 
 
 @app.route('/minusone/<productName>')
@@ -590,7 +598,15 @@ def tocart(prdname):
         db.session.commit()
 
     flash('You added the product to cart!')
-    return render_template('productinfo.html', product=prd)
+
+
+    all=Products.query.all()
+    categories=[i.category for i in all]
+    categories=set(categories)
+
+    return render_template('productinfo.html', product=prod,categories=categories)
+
+
 
 
 
@@ -651,7 +667,19 @@ def changemoney(productid):
         return redirect(url_for("product",productName=prd.name))
 
 
-
+@app.route('/changecategory/<productid>',methods = ['POST', 'GET'])
+@login_required
+def changecategory(productid):
+    if current_user.username=="shaochaoqun":
+        prd = Products.query.filter_by(id=productid).first()
+        changed = request.form.get('changecategory')
+        payselect = request.form.get('choosecategory')
+        if len(changed)==0:
+            changed=payselect
+        prd.category=changed.lower()
+        db.session.commit()
+        flash('You update category!')
+        return redirect(url_for("product",productName=prd.name))
 
 @app.route('/deleteprod/<productid>',methods = ['POST', 'GET'])
 @login_required
