@@ -405,8 +405,50 @@ def index():
     prev_url = url_for('index', page=posts.prev_num) \
         if posts.has_prev else None
 
-    return render_template('showimg.html', items=groups,next_url=next_url,
+
+    allcat=Products.query.all()
+    categories=[i.category for i in allcat]
+    categories=set(categories)
+
+    return render_template('showimg.html', items=groups,categories=categories,selectedcat='all',next_url=next_url,
     prev_url=prev_url)
+
+@app.route('/showascategory/<categoryname>')
+def showascategory(categoryname):
+
+    #allproc=Products.query.all()
+    #allproc[prd]='1.jpeg'
+
+    page = request.args.get('page', 1, type=int)
+    posts = Products.query.filter_by(category=categoryname).order_by(Products.name.asc()).paginate(
+        page, app.config['POSTS_PER_PAGE'], False)
+
+    groups=[]
+    ingroup=[]
+    cnt=0
+    for i in posts.items:
+        ingroup.append(i)
+        cnt+=1
+        if cnt==4:
+            cnt=0
+            groups.append(ingroup)
+            ingroup=[]
+    if not ingroup==[]:
+        groups.append(ingroup)
+
+    next_url = url_for('index', page=posts.next_num) \
+        if posts.has_next else None
+    prev_url = url_for('index', page=posts.prev_num) \
+        if posts.has_prev else None
+
+
+    allcat=Products.query.all()
+    categories=[i.category for i in allcat]
+    categories=set(categories)
+
+    return render_template('showimg.html', items=groups,categories=categories,selectedcat=categoryname,next_url=next_url,
+    prev_url=prev_url)
+
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -554,6 +596,14 @@ def product(productName):
 
 
     return render_template('productinfo.html', product=prod,categories=categories)
+
+
+
+
+
+
+
+
 
 
 @app.route('/minusone/<productName>')

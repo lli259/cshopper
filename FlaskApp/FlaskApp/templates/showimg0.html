@@ -2,60 +2,6 @@
 {% import 'bootstrap/wtf.html' as wtf %}
 
 {% block app_content %}
-<head>
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-  height: 100%;
-  width: 130px;
-  position: fixed;
-  z-index: 1;
-  top: 100px;
-  background: #fffff;
-  overflow-x: hidden;
-  padding: 8px 0;
-  font-weight: bold;
-  border-bottom: black;
-  font-style: italic;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #000000;
-  display: block;
-}
-
-
-
-.main {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-
-</style>
-</head>
-<body>
-
-<div class="sidenav">
-  <a href="{{ url_for('index') }}">all</a>
-  {% for categoryname in categories %}
-    {% if categoryname!=None%}
-  <a href="{{ url_for('showascategory', categoryname=categoryname) }}">{{categoryname}}</a>
-    {% endif %}
-  {% endfor %}
-</div>
-
-<div class="main">
-  <div>
-    <h6 >Category > {{selectedcat}} </h6>
-  <div>
   <div>
 
         <table style="width:100%">
@@ -64,7 +10,7 @@ body {
               {% for group in items %}
             <tr>
                 {% for any in group %}
-                <td width="17%">
+                <td width="20%">
 
                 <a href="{{ url_for('product', productName=any.name) }}">
                   {% if any.imgname %}
@@ -80,7 +26,7 @@ body {
                 {% for any in group %}
                 <td>
 
-                  <a href="{{ url_for('product', productName=any.name) }}" style="font-size:60%; color:Black;">{{ any.name }}</a>
+                  <a href="{{ url_for('product', productName=any.name) }}" style="font-size:150%; color:Black;">{{ any.name }}</a>
                 </td>
                 {% endfor %}
             </tr>
@@ -88,7 +34,7 @@ body {
                 {% for any in group %}
                 <td>
 
-                  <a href="{{ url_for('product', productName=any.name) }}" style="font-size:60%; color:Black;">${{ any.price }}</a>
+                  $<a href="{{ url_for('product', productName=any.name) }}" style="font-size:150%; color:Black;">{{ any.price }}</a>
                 </td>
                 {% endfor %}
             </tr>
@@ -120,7 +66,4 @@ body {
            </li>
        </ul>
    </nav>
-  </div>
-
-</body>
 {% endblock %}
