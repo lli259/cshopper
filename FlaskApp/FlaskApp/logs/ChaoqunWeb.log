@@ -1,48 +1,141 @@
-2019-05-25 15:28:36,497 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/upload/app/__init__.py:36]
-2019-05-25 15:31:12,095 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/upload/app/__init__.py:36]
-2019-05-25 18:22:15,716 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 18:25:01,368 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 18:25:45,030 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 18:27:17,398 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 18:38:54,214 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:35:10,922 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:36:28,928 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:38:30,237 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:41:02,173 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:43:16,202 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:43:53,967 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:44:13,300 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:47:06,359 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:49:02,295 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:49:16,626 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:49:31,207 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:50:25,324 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:50:37,637 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:50:47,096 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:51:12,863 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:51:25,325 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:51:45,600 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:51:59,560 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:52:11,885 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:53:11,819 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:54:08,766 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:54:42,511 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:56:44,502 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 20:56:55,316 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 21:01:23,615 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 21:02:15,344 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 21:02:33,115 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-25 21:03:45,963 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-26 00:37:55,978 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-26 00:37:59,960 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-26 00:55:51,990 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-26 00:55:59,725 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-26 00:57:09,235 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-26 01:32:55,463 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-26 01:33:24,501 INFO: ChaoqunWeb [in /home/liuliu/Downloads/chaoqun_shoppingweb/shoppingweb_python/aws_ec2/cqweb_upload_confirm/app/__init__.py:36]
-2019-05-26 23:48:57,247 INFO: ChaoqunWeb [in __init__.py:111]
-2019-05-29 04:01:57,812 INFO: ChaoqunWeb [in __init__.py:111]
-2019-05-29 05:00:32,462 INFO: ChaoqunWeb [in __init__.py:111]
-2019-05-29 05:01:22,190 INFO: ChaoqunWeb [in __init__.py:111]
-2019-05-29 07:12:19,561 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:114]
-2019-05-29 07:14:05,893 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:114]
+2019-05-30 04:34:43,886 ERROR: Exception on /index [GET] [in /usr/local/lib/python3.6/dist-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/FlaskApp/FlaskApp/__init__.py", line 406, in index
+    prev_url=prev_url)
+  File "/usr/local/lib/python3.6/dist-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/usr/local/lib/python3.6/dist-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/usr/lib/python3/dist-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/lib/python3/dist-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/var/www/FlaskApp/FlaskApp/templates/showimg.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/var/www/FlaskApp/FlaskApp/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/usr/local/lib/python3.6/dist-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/usr/local/lib/python3.6/dist-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/usr/local/lib/python3.6/dist-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/usr/local/lib/python3.6/dist-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/var/www/FlaskApp/FlaskApp/templates/base.html", line 103, in block "content"
+    <a href="{{ url_for('PrivacyPolicy') }}">Privacy</a>
+  File "/usr/local/lib/python3.6/dist-packages/flask/helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/helpers.py", line 345, in url_for
+    force_external=external)
+  File "/usr/lib/python3/dist-packages/werkzeug/routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'PrivacyPolicy'. Did you mean 'paymentchoice' instead?
+2019-05-30 04:34:49,656 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 04:34:49,776 ERROR: Exception on / [GET] [in /usr/local/lib/python3.6/dist-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/FlaskApp/FlaskApp/__init__.py", line 406, in index
+    prev_url=prev_url)
+  File "/usr/local/lib/python3.6/dist-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/usr/local/lib/python3.6/dist-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/usr/lib/python3/dist-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/lib/python3/dist-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/var/www/FlaskApp/FlaskApp/templates/showimg.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/var/www/FlaskApp/FlaskApp/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/usr/local/lib/python3.6/dist-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/usr/local/lib/python3.6/dist-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/usr/local/lib/python3.6/dist-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/usr/local/lib/python3.6/dist-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/var/www/FlaskApp/FlaskApp/templates/base.html", line 103, in block "content"
+    <a href="{{ url_for('PrivacyPolicy') }}">Privacy</a>
+  File "/usr/local/lib/python3.6/dist-packages/flask/helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/helpers.py", line 345, in url_for
+    force_external=external)
+  File "/usr/lib/python3/dist-packages/werkzeug/routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'PrivacyPolicy'. Did you mean 'paymentchoice' instead?
+2019-05-30 04:36:05,152 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 04:38:09,544 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 04:50:48,243 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 04:51:15,747 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 05:00:06,434 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 05:05:22,003 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 05:05:31,029 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 05:14:43,932 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 05:14:47,038 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 05:15:19,596 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 05:16:08,620 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 05:16:23,521 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 05:27:40,163 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 05:27:42,433 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 05:30:55,205 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 05:33:58,444 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 05:36:19,869 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 05:37:07,246 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 05:38:23,017 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 15:17:32,863 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 15:17:34,276 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 15:19:32,556 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 15:20:01,814 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 15:27:50,285 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 15:28:04,323 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 15:28:43,207 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 15:30:44,784 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 15:31:13,979 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 15:33:25,864 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 15:33:35,781 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 15:42:15,211 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 15:48:55,698 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 15:56:07,402 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 15:56:28,042 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]

@@ -1,0 +1,98 @@
+2019-05-29 20:58:55,238 ERROR: Exception on /upload [POST] [in /usr/local/lib/python3.6/dist-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/dist-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/var/www/FlaskApp/FlaskApp/__init__.py", line 767, in upload
+    app.config['UPLOAD_FOLDER']+"/"+savedImgName
+  File "/usr/lib/python3/dist-packages/werkzeug/datastructures.py", line 2725, in save
+    dst = open(dst, 'wb')
+FileNotFoundError: [Errno 2] No such file or directory: '/var/www/FlaskApp/FlaskApp/app/static//12_img.png'
+2019-05-29 21:06:57,304 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:114]
+2019-05-29 21:07:00,176 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:114]
+2019-05-29 21:07:09,227 ERROR: Exception on /upload [POST] [in /usr/local/lib/python3.6/dist-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/dist-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/var/www/FlaskApp/FlaskApp/__init__.py", line 767, in upload
+    app.config['UPLOAD_FOLDER']+"/"+savedImgName
+  File "/usr/lib/python3/dist-packages/werkzeug/datastructures.py", line 2725, in save
+    dst = open(dst, 'wb')
+FileNotFoundError: [Errno 2] No such file or directory: '/var/www/FlaskApp/FlaskApp/app/static//1_img.png'
+2019-05-29 21:08:26,377 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:114]
+2019-05-29 21:08:41,731 ERROR: Exception on /upload [POST] [in /usr/local/lib/python3.6/dist-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/dist-packages/flask_login/utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "/var/www/FlaskApp/FlaskApp/__init__.py", line 767, in upload
+    app.config['UPLOAD_FOLDER']+"/"+savedImgName
+  File "/usr/lib/python3/dist-packages/werkzeug/datastructures.py", line 2725, in save
+    dst = open(dst, 'wb')
+FileNotFoundError: [Errno 2] No such file or directory: '/var/www/FlaskApp/FlaskApp/app/static/1_img.png'
+2019-05-29 21:10:01,799 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:114]
+2019-05-29 21:10:03,477 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:114]
+2019-05-29 21:26:16,911 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-29 21:26:32,272 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-29 21:32:47,344 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-29 21:48:43,073 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-29 22:00:35,938 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-29 22:05:04,912 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-29 22:11:36,239 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-29 22:50:21,926 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-29 22:51:10,393 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-29 22:51:33,516 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-29 22:53:02,300 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-29 23:12:55,245 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 02:45:57,247 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 02:46:09,659 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 02:53:20,539 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 02:54:17,255 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 02:57:34,192 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 03:02:52,082 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 03:12:50,038 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 03:21:22,064 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 03:21:24,210 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 03:23:30,412 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 03:23:31,126 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 03:24:09,593 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 03:31:18,004 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 03:31:20,351 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 04:24:14,535 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 04:29:05,883 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 04:31:23,121 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
+2019-05-30 04:34:43,763 INFO: ChaoqunWeb [in /var/www/FlaskApp/FlaskApp/__init__.py:112]
