@@ -8,32 +8,9 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.sidenav {
-  height: 100%;
-  width: 130px;
-  position: fixed;
-  z-index: 1;
-  top: 100px;
-  background: #fffff;
-  overflow-x: hidden;
-  padding: 8px 0;
-  font-weight: bold;
-  border-bottom: black;
-  font-style: italic;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #000000;
-  display: block;
-}
-
-
-
 .main {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  margin-left: 40px; /* Same width as the sidebar + left position in px */
+  margin-right: 40px
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
@@ -41,14 +18,33 @@ body {
 
 </style>
 </head>
+
+
+
+
+
 <body>
 
-<div class="sidenav">
-  <a href="{{ url_for('index') }}">all</a>
-  {% for categoryname in categories %}
-  <a href="{{ url_for('showascategory', categoryname=categoryname) }}">{{categoryname}}</a>
-  {% endfor %}
-</div>
+
+  <nav class="navbar">
+      <div class="container" style="background-color:#e5fbfa">
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2" style="background-color:#e5fbfa">
+
+              <ul class="nav navbar-nav">
+     <br>
+              <li><a style="color:Black;" href="{{ url_for('index') }}">all</a></li>
+              {% for categoryname in categories %}
+              <li><a style="color:Black;" href="{{ url_for('showascategory', categoryname=categoryname) }}">{{categoryname}}</a></li>
+              {% endfor %}
+
+      <br><br>
+              </ul>
+
+          </div>
+      </div>
+  </nav>
+
+
 
 <div class="main">
   <div>
@@ -59,18 +55,36 @@ body {
   <div>
 
         <table style="width:100%">
+          <col style="width:25%">
+          	<col style="width:25%">
+          	<col style="width:25%">
+            <col style="width:25%">
 
+            <tr>
+              <td>
+               <br>
+              </td>
+              <td>
+               <br>
+              </td>
+              <td>
+               <br>
+              </td>
+              <td>
+               <br>
+              </td>
+            </tr>
           {% if items %}
               {% for group in items %}
             <tr>
                 {% for any in group %}
-                <td width="17%">
+                <td >
 
                 <a href="{{ url_for('product', productName=any.name) }}">
                   {% if any.imgname %}
-                    <img width="90%" src="{{url_for('static', filename=any.imgname)}}"/> </a>
+                    <img width="65%" src="{{url_for('static', filename=any.imgname)}}"/> </a>
                   {% else %}
-                    <img width="90%" src="{{url_for('static', filename='1.jpeg')}}"/> </a>
+                    <img width="65%" src="{{url_for('static', filename='1.jpeg')}}"/> </a>
                   {% endif %}
 
                 </td>
