@@ -23,7 +23,7 @@ body {
 
 	
   <nav class="navbar navbar-default">
-      <div class="container" style="background-color:#e5fbfa">
+      <div class="container" style="background-color:#000000">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
@@ -32,13 +32,13 @@ body {
                     <span class="icon-bar"></span>
                 </button>
             </div>
-           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2" style="background-color:#e5fbfa">
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2" style="background-color:#000000">
 
               <ul class="nav navbar-nav navbar-left">
      <br>
-              <li><a style="color:Black;" href="{{ url_for('index') }}">all</a></li>
+     <li><a style="color:White;" href="{{ url_for('index') }}">{{"all".capitalize()}}</a></li>
               {% for categoryname in categories %}
-              <li><a style="color:Black;" href="{{ url_for('showascategory', categoryname=categoryname) }}">{{categoryname}}</a></li>
+              <li><a style="color:White;" href="{{ url_for('showascategory', categoryname=categoryname) }}">{{categoryname.capitalize()}}</a></li>
               {% endfor %}
 
       <br><br>

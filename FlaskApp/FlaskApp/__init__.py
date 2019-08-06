@@ -654,7 +654,7 @@ def tocart(prdname):
     categories=[i.category for i in all]
     #categories=set(categories)
     categories=sorted(list(set(categories)))
-    return render_template('productinfo.html', product=prod,categories=categories)
+    return render_template('productinfo.html', product=prd,categories=categories)
 
 
 

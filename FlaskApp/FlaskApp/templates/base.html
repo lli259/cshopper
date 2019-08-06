@@ -14,14 +14,35 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url_for('index') }}"><img width="9%" src="{{url_for('static', filename='cshopper.png')}}"/></a>
-            </div>
+
+		
+
+
+
+
+
+      <div class="row">
+        <div class="col-md-3">
+
+	<div class="row">
+		<div class="col-md-6">
+		<a class="navbar-brand" href="{{ url_for('index') }}"><img width="80%" src="{{url_for('static', filename='cshopper.png')}}"/></a>	
+		</div>
+		<div class="col-md-6">
+		<a class="navbar-brand"  ><img width="80%" src="{{url_for('static', filename='freeship.jpg')}}"/></a>	
+		</div>
+	</div>
+
+	</div>
+	</div>
+	    </div>
+
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="nav navbar-nav navbar-right">
 		   <br>
                     {% if current_user.is_anonymous %}
-                    <li><a href="{{ url_for('login') }}">Login</a></li>
+                    <li><a href="{{ url_for('login') }}">Login or Register</a></li>
                     {% else %}
 
                     <li><a >{{current_user.username}}</a></li>
@@ -35,8 +56,10 @@
 
                     <li><a href="{{ url_for('logout') }}">Logout</a></li>
                     {% endif %}
+
 		    <br><br>
-                </ul>
+		
+		</ul>
 
             </div>
         </div>
